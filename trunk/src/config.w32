@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("hellovigossguard", "for hellovigossguard support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("hellovigossguard", "enable hellovigossguard support", "no");
+
+if (PHP_HELLOVIGOSSGUARD != "no") {
+	EXTENSION("hellovigossguard", "hellovigossguard.c");
+}
+
